@@ -1,0 +1,88 @@
+{
+  "ngDeps": {
+    "1": "main",
+    "3": [
+      {
+        "1": "dart:html",
+        "5": false
+      },
+      {
+        "1": "dart:convert",
+        "5": false
+      },
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/bootstrap_static.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "MyApp",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'my-app'"
+              },
+              {
+                "1": "template",
+                "2": "'''\r\n  <ul>\r\n    <li *ngFor=\"#name of friends.names\">\r\n    {{name.firstName}} {{name.lastName}}\r\n    </li>\r\n </ul>\r\n'''"
+              },
+              {
+                "1": "directives",
+                "2": "const [NgFor]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "8": [
+          {
+            "2": "NgFor"
+          }
+        ]
+      }
+    ],
+    "6": "verify.dart"
+  },
+  "MyApp": {
+    "kind": "type",
+    "value": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "my-app",
+      "exportAs": null,
+      "type": {
+        "name": "MyApp",
+        "moduleUrl": "asset:dartgo3/web/verify.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "  <ul>\r\n    <li *ngFor=\"#name of friends.names\">\r\n    {{name.firstName}} {{name.lastName}}\r\n    </li>\r\n </ul>\r\n",
+        "templateUrl": "asset:dartgo3/web/verify.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      }
+    }
+  }
+}
